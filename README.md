@@ -31,10 +31,7 @@ Each category has a "download all" button if you want to grab everything at once
 - Real-time terminal log with color-coded output
 
 ---
-
-## Screenshots
-
-*Coming soon*
+<img width="1263" height="788" alt="Screenshot_1" src="https://github.com/user-attachments/assets/a6866e33-606c-4ba8-89ec-dc8140aa2e9a" />
 
 ---
 
