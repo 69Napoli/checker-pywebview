@@ -144,7 +144,7 @@ const MY_TOOLS = [
 
 ## Credits
 
-- Developed by [@thcjackk](https://github.com/thcjackk)
+- Developed by [@napoli](https://github.com/69Napoli)
 - NirSoft tools by [Nir Sofer](https://www.nirsoft.net/)
 - Detect AC tools by [spokwn](https://github.com/spokwn)
 - Eric Zimmerman's tools from [ericzimmerman.github.io](https://ericzimmerman.github.io/)
