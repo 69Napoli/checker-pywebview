@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checker Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="layout">
+      <div class="main">
+
+        
+        <div class="warning-bar">
+          <span id="icon-status"></span>
+          <p><span class="highlight">License Active</span> &bull; Checker folder auto-created on Desktop</p>
+          <button class="btn-open-folder" onclick="openCheckerFolder()">
+            <span id="icon-folder"></span>
+            Open Folder
+          </button>
+        </div>
+
+        
+        <div class="content">
+          <div class="content-header">
+            <div class="content-header-left">
+              <button class="btn-back" id="btn-back" style="display:none" onclick="goBack()">&#8592; Back</button>
+              <h2 class="content-title">
+                <span id="content-title-text">Main Toolkit</span>
+                <span class="pulse-dot"></span>
+              </h2>
+            </div>
+            <div class="item-count" id="item-count">Items: 13</div>
+          </div>
+          <div class="tool-grid" id="tool-grid"></div>
+        </div>
+
+        
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-header-left">
+              <span id="icon-terminal"></span>
+              <span>Process Output</span>
+            </div>
+            <span class="terminal-version">v2.4.0</span>
+          </div>
+          <div class="terminal-body" id="terminal-body"></div>
+        </div>
+
+      </div>
+
+      
+      <div class="sidebar">
+        <div class="sidebar-section">
+          <p class="sidebar-title">System</p>
+          <div class="stat-box"><span class="stat-label">OS</span><span class="stat-value">Win x64</span></div>
+          <div class="stat-box"><span class="stat-label">User</span><span class="stat-value" id="stat-user">Admin</span></div>
+          <div class="stat-box"><span class="stat-label">Host</span><span class="stat-value" id="stat-host">Local</span></div>
+        </div>
+        <div class="sidebar-section">
+          <p class="sidebar-title">Status</p>
+          <div class="process-box">
+            <div class="process-status">
+              <div class="status-dot" id="status-dot"></div>
+              <span class="status-text" id="status-text">Idle</span>
+            </div>
+          </div>
+      <!--   </div>
+         <div class="sidebar-footer">
+          <div class="license-box">
+            <p class="license-title">NAPOLI CORE</p>
+            <p class="license-sub">Verified License</p> 
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="footer">
+      <div class="footer-left">
+        <span>Thread Active</span>
+        <span class="footer-sep">|</span>
+        <span id="footer-status">Ready</span>
+      </div>
+      <span class="footer-time" id="footer-time"></span>
+    </div>
+  </div>
+
+  <script src="icons.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('icon-status').innerHTML = ICONS.shield;
+    document.getElementById('icon-folder').innerHTML = ICONS.folderOpen;
+    document.getElementById('icon-terminal').innerHTML = ICONS.terminal;
+  </script>
+</body>
+</html>
