@@ -91,6 +91,7 @@ const MAIN_TOOLS = [
   { id:"10", name:"FTK Imager", icon:"fingerprint", category:"Forensics", url:"https://d1kpmuwb7gvu1i.cloudfront.net/Imgr/4.7.3.81%20Release/Exterro_FTK_Imager_(x64)-4.7.3.81.exe", filename:"Ftk-Imager.exe" },
   { id:"11", name:"OsForensics", icon:"scanLine", category:"Forensics", url:"https://osforensics.com/downloads/OSForensics.exe", filename:"OSForensics.exe" },
   { id:"12", name:"System Informer", icon:"monitor", category:"Utility", url:"https://github.com/winsiderss/si-builds/releases/download/4.0.26036.1143/systeminformer-build-canary-setup.exe", filename:"SystemInformer(Setup).exe" },
+  { id:"16", name:"EZ PC Checker", icon:"shield", category:"Forensics", url:"https://github.com/69Napoli/checking-local/releases/download/Release/EZ_PC_Checker.exe", filename:"EZ_PC_Checker.exe" },
 ];
 
 
