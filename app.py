@@ -91,6 +91,14 @@ class CheckerAPI:
             return json.dumps({'ok': False, 'error': str(e)})
 
 
+    def open_url(self, url):
+        """Open a URL in the default browser"""
+        import webbrowser
+        webbrowser.open(url)
+        return json.dumps({'ok': True})
+
+
+
 def main():
     api = CheckerAPI()
     index_path = get_resource_path('index.html')

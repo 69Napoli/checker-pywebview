@@ -81,6 +81,7 @@ const MAIN_TOOLS = [
   { id:"2", name:"Detect Ac Tools", icon:"cpu", category:"Toolkit", submenu: DETECT_AC_TOOLS },
   { id:"3", name:"Eric Zimmerman's Tools", icon:"microscope", category:"Toolkit", submenu: ERIC_TOOLS },
  /*  { id:"14", name:"Echo Tools", icon:"radio", category:"Toolkit", submenu: ECHO_TOOLS }, */
+  { id:"15", name:"YARA-X Scanner", icon:"scanLine", category:"Web Tool", action:"open-yara" },
   { id:"4", name:"USB Check", icon:"usb", category:"Registry", action:"usb-check" },
   { id:"5", name:"Journal Trace", icon:"activity", category:"Forensics", url:"https://github.com/spokwn/JournalTrace/releases/download/1.2/JournalTrace.exe", filename:"JournalTrace.exe" },
   { id:"6", name:"Disk Drill", icon:"hardDrive", category:"Utility", url:"https://win.cleverfiles.com/disk-drill-win.exe", filename:"DiskDrill.exe" },
@@ -190,6 +191,13 @@ async function handleToolClick(toolId) {
   if (tool.submenu) { menuHistory.push(currentMenu); currentMenu = tool.submenu; addLog(`[SYS] Entering submenu: ${tool.name}`); render(); return; }
   if (tool.action === "usb-check") { await runUSBCheck(); return; }
   if (tool.action && tool.action.startsWith("powershell-")) { await runPowerShell(tool.action.replace("powershell-","")); return; }
+  
+  if (tool.action === "open-yara") { 
+    addLog("[SYS] Opening YARA-X Scanner in browser...");
+    window.pywebview.api.open_url("https://yara-x-railway-production.up.railway.app/");
+    return; 
+  }
+
   
   if (tool.downloads) {
     isExecuting = true; updateSidebar(); render();
